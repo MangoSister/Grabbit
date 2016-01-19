@@ -1,8 +1,0 @@
-
-http://www.love2d.org/wiki/love
-http://www.love2d.org/wiki/Category:Tutorials
-http://www.love2d.org/wiki/Category:Libraries
-http://www.love2d.org/wiki/Category:Snippets
-http://www.love2d.org/wiki/Category:Games
-https://github.com/lukaszdk/Dave-Gone-Apeshit/blob/master/player.lua
-
