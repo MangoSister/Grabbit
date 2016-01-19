@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="41" height="25" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="box1-32px" tilewidth="32" tileheight="32">
+  <image source="box1-32px.png" trans="ff00ff" width="32" height="32"/>
+  <tile id="0">
+   <properties>
+    <property name="class" value="Tile"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="2" name="rabbit1" tilewidth="32" tileheight="32">
+  <image source="rabbit1.gif" trans="ff00ff" width="32" height="32"/>
+ </tileset>
+ <imagelayer name="background">
+  <image source="bg1.png"/>
+ </imagelayer>
+ <imagelayer name="frame">
+  <image source="frame1.png"/>
+ </imagelayer>
+ <layer name="tiles" width="41" height="25">
+  <data encoding="base64" compression="zlib">
+   eJzt0zEKADAIBMHz/59ObRUIB55hF6ydQktSLZjkMHrC6OlmTPg3jJ5+uMeEMPYdr/eMse/AOBtGTxg9YfS0yZg+ByMSALw=
+  </data>
+ </layer>
+ <objectgroup name="seggraph" visible="0">
+  <object x="228" y="194.667">
+   <polyline points="-4.5,-2.5 284,-1.33333"/>
+  </object>
+  <object x="32" y="768" width="200">
+   <polyline points="0,0 1248,0.666667"/>
+  </object>
+  <object x="768.5" y="384.833">
+   <polyline points="0,0 254.5,-0.83333"/>
+  </object>
+  <object x="324" y="678.667">
+   <polyline points="0,0 94.6667,-1.33333"/>
+  </object>
+  <object x="464" y="617.333">
+   <polyline points="0,0 73.3333,0"/>
+  </object>
+  <object x="573.333" y="516">
+   <polyline points="0,0 77.3333,1.33333"/>
+  </object>
+  <object x="674.667" y="438.667">
+   <polyline points="0,0 68,0"/>
+  </object>
+  <object x="682.667" y="321.333">
+   <polyline points="0,0 64,0"/>
+  </object>
+  <object x="593.333" y="256">
+   <polyline points="0,0 65.3333,0"/>
+  </object>
+ </objectgroup>
+ <objectgroup name="tilecollision">
+  <properties>
+   <property name="collidable" value="true"/>
+  </properties>
+  <object x="32" y="768" width="200">
+   <properties>
+    <property name="class" value="two"/>
+   </properties>
+   <polyline points="0,0 1248,0.666667"/>
+  </object>
+  <object x="1280" y="32">
+   <properties>
+    <property name="class" value="two"/>
+   </properties>
+   <polyline points="0,0 0,736.833"/>
+  </object>
+  <object x="32" y="32">
+   <properties>
+    <property name="class" value="two"/>
+   </properties>
+   <polyline points="0,0 0,736.833"/>
+  </object>
+  <object x="32" y="32" width="200">
+   <properties>
+    <property name="class" value="two"/>
+   </properties>
+   <polyline points="0,0 1248,0.666667"/>
+  </object>
+  <object x="768" y="384" width="256" height="128">
+   <properties>
+    <property name="class" value="two"/>
+   </properties>
+  </object>
+  <object x="224" y="192" width="288" height="96">
+   <properties>
+    <property name="class" value="two"/>
+   </properties>
+  </object>
+  <object x="593.333" y="256">
+   <properties>
+    <property name="class" value="one"/>
+   </properties>
+   <polyline points="0,0 65.3333,0"/>
+  </object>
+  <object x="674.667" y="438.667">
+   <properties>
+    <property name="class" value="one"/>
+   </properties>
+   <polyline points="0,0 68,0"/>
+  </object>
+  <object x="324" y="678.667">
+   <properties>
+    <property name="class" value="one"/>
+   </properties>
+   <polyline points="0,0 94.6667,-1.33333"/>
+  </object>
+  <object x="682.667" y="321.333">
+   <properties>
+    <property name="class" value="one"/>
+   </properties>
+   <polyline points="0,0 64,0"/>
+  </object>
+  <object x="464" y="617.333">
+   <properties>
+    <property name="class" value="one"/>
+   </properties>
+   <polyline points="0,0 73.3333,0"/>
+  </object>
+  <object x="768.5" y="384.833">
+   <polyline points="0,0 254.5,-0.83333"/>
+  </object>
+  <object x="573.333" y="516">
+   <properties>
+    <property name="class" value="one"/>
+   </properties>
+   <polyline points="0,0 77.3333,1.33333"/>
+  </object>
+ </objectgroup>
+</map>

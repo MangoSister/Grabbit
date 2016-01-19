@@ -1,0 +1,16 @@
+
+
+  Task         Workload     Deadline     Person
+  ====         ========     ========     ======
+
+  Hunter       ****           27.        Markus
+  World        **             27.        Yang
+  Collisions   *****          29.        Yang
+  Hook         ******         30.        Markus
+  Ladder       ***             1.        Markus
+  Multiplayer  **              2.        Markus
+  Rabbit       ******          3.        Yang
+  Animations   ***             1.        Marc
+  Boxes        ***---          4.        Markus
+  Menu/UI      ***             3.        Marc
+

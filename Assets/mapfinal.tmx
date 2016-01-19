@@ -1,0 +1,766 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="41" height="25" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="box1-32px" tilewidth="32" tileheight="32">
+  <image source="box1-32px.png" trans="ff00ff" width="32" height="32"/>
+  <tile id="0">
+   <properties>
+    <property name="class" value="Tile"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="2" name="plattform_large" tilewidth="32" tileheight="32">
+  <image source="plattform_large_finished.png" trans="ff00ff" width="256" height="32"/>
+ </tileset>
+ <tileset firstgid="10" name="plattform_medium" tilewidth="32" tileheight="32">
+  <image source="plattform_medium_finished.png" trans="ff00ff" width="192" height="32"/>
+ </tileset>
+ <tileset firstgid="16" name="plattform_small" tilewidth="32" tileheight="32">
+  <image source="plattform_small_finished.png" trans="ff00ff" width="96" height="32"/>
+ </tileset>
+ <tileset firstgid="19" name="ladder_finished" tilewidth="32" tileheight="32">
+  <image source="ladder_finished.png" trans="ff00ff" width="32" height="128"/>
+ </tileset>
+ <tileset firstgid="23" name="spring" tilewidth="32" tileheight="32">
+  <image source="spring.png" trans="ff00ff" width="32" height="32"/>
+ </tileset>
+ <tileset firstgid="24" name="rabbithole_finished" tilewidth="32" tileheight="32">
+  <image source="rabbithole_finished.png" trans="ff00ff" width="128" height="32"/>
+ </tileset>
+ <imagelayer name="background">
+  <image source="bg2.png"/>
+ </imagelayer>
+ <imagelayer name="frame">
+  <image source="frame1.png"/>
+ </imagelayer>
+ <layer name="tiles" width="41" height="25">
+  <data encoding="base64" compression="zlib">
+   eJzllskOwCAIRO2+r///sZ1eG01BqdhI8m4yjrhRGGOKH5By5OTxqSO5dq6W63zYNCi6PudxBBOYwQJWsAl43MEBToJv1zq446XqyJmTOz5lj1QdzTujEVJ7/WUu99/R9BgyTwkqUIMGtKADPRgcuRy/lHFSf7xmHaVzQ2ui0Svl9D5S/plY5/EOW38QwyOnN3Lp+Hh867OMJcc3Uttrik6Kd+bLiOkxxp3R5AJCbwIl
+  </data>
+ </layer>
+ <layer name="interact" width="41" height="25">
+  <data encoding="base64" compression="zlib">
+   eJztltsKgCAQBf2H7vX//5kvgciC7kgnEgd8c1nT0VMIg4GWSVTTwh/WOItqWlgENRvokbKKalroycf0vHr0cY/jiOOM46qYn/vb6mPpPlheeF1520fLC68r6fzaN8LTw/LC6wrx0bOPlktev8hZ03tN3yzSj+w97UX70Zyh36bMNXWGEtQZSlBnKIH6WMKbtQ9WHuQ+ev8r6Vq+5gaNXAWR
+  </data>
+ </layer>
+ <objectgroup name="collision">
+  <properties>
+   <property name="collidable" value="true"/>
+  </properties>
+  <object x="32" y="768" width="200">
+   <properties>
+    <property name="class" value="two"/>
+   </properties>
+   <polyline points="0,0 1248,0.666667"/>
+  </object>
+  <object x="1280" y="32">
+   <properties>
+    <property name="class" value="two"/>
+   </properties>
+   <polyline points="0,0 0,736.833"/>
+  </object>
+  <object x="32" y="32">
+   <properties>
+    <property name="class" value="two"/>
+   </properties>
+   <polyline points="0,0 0,736.833"/>
+  </object>
+  <object x="32" y="32" width="200">
+   <properties>
+    <property name="class" value="two"/>
+   </properties>
+   <polyline points="0,0 1248,0.666667"/>
+  </object>
+  <object x="353.184" y="321.414" width="95.4221" height="190.522">
+   <properties>
+    <property name="class" value="two"/>
+   </properties>
+  </object>
+  <object x="256.772" y="416.915" width="96.086" height="31.4858">
+   <properties>
+    <property name="class" value="two"/>
+   </properties>
+  </object>
+  <object x="352.433" y="128.4" width="95.4466" height="127.209">
+   <properties>
+    <property name="class" value="two"/>
+   </properties>
+  </object>
+  <object x="32.2178" y="351.897" width="128.304" height="31.7348">
+   <properties>
+    <property name="class" value="two"/>
+   </properties>
+  </object>
+  <object x="32.3489" y="608.366" width="287.824" height="30.8778">
+   <properties>
+    <property name="class" value="two"/>
+   </properties>
+  </object>
+  <object x="832.995" y="320.569" width="95.0933" height="159.053">
+   <properties>
+    <property name="class" value="two"/>
+   </properties>
+  </object>
+  <object x="928.113" y="384.53" width="95.948" height="30.6296">
+   <properties>
+    <property name="class" value="two"/>
+   </properties>
+  </object>
+  <object x="832.283" y="543.797" width="95.952" height="128.501">
+   <properties>
+    <property name="class" value="two"/>
+   </properties>
+  </object>
+  <object x="993.054" y="127.666" width="285.919" height="32.1315">
+   <properties>
+    <property name="class" value="two"/>
+   </properties>
+  </object>
+  <object x="1152.21" y="448.417" width="128.193" height="30.8623">
+   <properties>
+    <property name="class" value="two"/>
+   </properties>
+  </object>
+  <object x="832.76" y="736.36" width="94.7791" height="31.9981">
+   <properties>
+    <property name="class" value="two"/>
+   </properties>
+  </object>
+  <object x="544.355" y="95.973" width="31.1241" height="191.71">
+   <properties>
+    <property name="class" value="two"/>
+   </properties>
+  </object>
+  <object x="672.595" y="256.14" width="30.9009" height="31.7961">
+   <properties>
+    <property name="class" value="two"/>
+   </properties>
+  </object>
+  <object x="703.68" y="95.8287" width="32.3279" height="192.098">
+   <properties>
+    <property name="class" value="two"/>
+   </properties>
+  </object>
+  <object x="575.703" y="96.0577" width="31.9009" height="31.4628">
+   <properties>
+    <property name="class" value="two"/>
+   </properties>
+  </object>
+  <object x="672.468" y="95.7204" width="30.2343" height="32.4628">
+   <properties>
+    <property name="class" value="two"/>
+   </properties>
+  </object>
+  <object x="575.993" y="256.179" width="32.2343" height="31.4628">
+   <properties>
+    <property name="class" value="two"/>
+   </properties>
+  </object>
+  <object x="994.366" y="609.497">
+   <properties>
+    <property name="class" value="one"/>
+   </properties>
+   <polyline points="0,0 122.924,-0.731689 188.044,5.85352"/>
+  </object>
+  <object x="98.2814" y="160.044">
+   <properties>
+    <property name="class" value="one"/>
+   </properties>
+   <polyline points="0,0 122.924,-0.731689 188.044,5.85352"/>
+  </object>
+  <object x="514.717" y="385.425">
+   <properties>
+    <property name="class" value="one"/>
+   </properties>
+   <polyline points="0,0 180.714,0 252.706,6.36662"/>
+  </object>
+  <object x="394.928" y="576.538">
+   <properties>
+    <property name="class" value="one"/>
+   </properties>
+   <polyline points="0,0 80.0017,-0.133316"/>
+  </object>
+  <object x="810.274" y="161.32">
+   <properties>
+    <property name="class" value="one"/>
+   </properties>
+   <polyline points="1.17864,0 81.8681,0"/>
+  </object>
+  <object x="576.66" y="672.846" width="32.2343" height="31.4628">
+   <properties>
+    <property name="class" value="two"/>
+   </properties>
+  </object>
+  <object x="673.262" y="672.807" width="30.9009" height="31.7961">
+   <properties>
+    <property name="class" value="two"/>
+   </properties>
+  </object>
+  <object x="576.37" y="512.724" width="31.9009" height="31.4628">
+   <properties>
+    <property name="class" value="two"/>
+   </properties>
+  </object>
+  <object x="704.347" y="512.495" width="32.3279" height="192.098">
+   <properties>
+    <property name="class" value="two"/>
+   </properties>
+  </object>
+  <object x="673.135" y="512.387" width="30.2343" height="32.4628">
+   <properties>
+    <property name="class" value="two"/>
+   </properties>
+  </object>
+  <object x="545.021" y="512.64" width="31.1241" height="191.71">
+   <properties>
+    <property name="class" value="two"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="interactPhys">
+  <properties>
+   <property name="collidable" value="true"/>
+  </properties>
+  <object x="211.03" y="160.166">
+   <properties>
+    <property name="class" value="Ladder"/>
+   </properties>
+   <polyline points="-1.50361,-23.0257 -4.55443,444.816"/>
+  </object>
+  <object x="1105.47" y="128.295">
+   <properties>
+    <property name="class" value="Ladder"/>
+   </properties>
+   <polyline points="-0.320082,-28.1345 1.51814,469.106"/>
+  </object>
+  <object x="655.665" y="772.064">
+   <properties>
+    <property name="class" value="Ladder"/>
+   </properties>
+   <polyline points="0.554047,-9.62211 0,-271.026"/>
+  </object>
+  <object x="720.732" y="513.096">
+   <properties>
+    <property name="class" value="Ladder"/>
+   </properties>
+   <polyline points="-0.340136,-6.12245 0.239418,-145.417"/>
+  </object>
+  <object x="561.06" y="512.464">
+   <properties>
+    <property name="class" value="Ladder"/>
+   </properties>
+   <polyline points="-0.340136,-6.46259 -0.0871397,-147.071"/>
+  </object>
+  <object x="783.443" y="769.704">
+   <properties>
+    <property name="class" value="Spring"/>
+   </properties>
+   <polyline points="0,0 0,-31.9685"/>
+  </object>
+  <object x="494.963" y="766.501">
+   <properties>
+    <property name="class" value="Spring"/>
+   </properties>
+   <polyline points="0,0 0,-31.9685"/>
+  </object>
+  <object x="1200.67" y="444.667">
+   <properties>
+    <property name="class" value="Spring"/>
+   </properties>
+   <polyline points="0,0 0,-30.6667"/>
+  </object>
+  <object x="976.667" y="380.667">
+   <properties>
+    <property name="class" value="Spring"/>
+   </properties>
+   <polyline points="0,0 0,-30.6667"/>
+  </object>
+  <object x="304" y="412.667">
+   <properties>
+    <property name="class" value="Spring"/>
+   </properties>
+   <polyline points="0,0 0,-30.6667"/>
+  </object>
+  <object x="110.667" y="348">
+   <properties>
+    <property name="class" value="Spring"/>
+   </properties>
+   <polyline points="0,0 0,-30.6667"/>
+  </object>
+  <object x="593.443" y="253.037">
+   <properties>
+    <property name="class" value="Spring"/>
+   </properties>
+   <polyline points="0,0 0,-31.9685"/>
+  </object>
+ </objectgroup>
+ <objectgroup name="annotation" visible="0">
+  <object x="50.6831" y="758.043">
+   <properties>
+    <property name="num" value="1"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object x="146.54" y="758.043">
+   <properties>
+    <property name="num" value="2"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object x="234.685" y="759.145">
+   <properties>
+    <property name="num" value="3"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object x="318.422" y="753.636">
+   <properties>
+    <property name="num" value="4"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object x="408.77" y="759.145">
+   <properties>
+    <property name="num" value="5"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object x="494.711" y="756.941">
+   <properties>
+    <property name="num" value="6"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object x="591.67" y="755.84">
+   <properties>
+    <property name="num" value="7"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object x="668.797" y="755.84">
+   <properties>
+    <property name="num" value="8"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object x="736.007" y="759.145">
+   <properties>
+    <property name="num" value="9"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object x="798.81" y="755.84">
+   <properties>
+    <property name="num" value="10"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object x="841.781" y="728.294">
+   <properties>
+    <property name="num" value="11"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object x="923.314" y="728.294">
+   <properties>
+    <property name="num" value="12"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object x="956.312" y="757.815">
+   <properties>
+    <property name="num" value="13"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object x="1008.26" y="760.597">
+   <properties>
+    <property name="num" value="14"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object x="1062.98" y="755.96">
+   <properties>
+    <property name="num" value="15"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object x="1118.63" y="755.96">
+   <properties>
+    <property name="num" value="16"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object x="1185.42" y="755.96">
+   <properties>
+    <property name="num" value="17"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object x="1242" y="756.887">
+   <properties>
+    <property name="num" value="18"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object x="1180.08" y="603.202">
+   <properties>
+    <property name="num" value="32"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object x="1106.58" y="591.782">
+   <properties>
+    <property name="num" value="31"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object x="990.69" y="594.854">
+   <properties>
+    <property name="num" value="30"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object x="919.21" y="532.418">
+   <properties>
+    <property name="num" value="29"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object x="830.367" y="531.491">
+   <properties>
+    <property name="num" value="28"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object x="721.64" y="497.171">
+   <properties>
+    <property name="num" value="27"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object x="555.607" y="496.243">
+   <properties>
+    <property name="num" value="24"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object x="601.985" y="495.316">
+   <properties>
+    <property name="num" value="25"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object x="680.827" y="497.171">
+   <properties>
+    <property name="num" value="26"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object x="469.344" y="565.81">
+   <properties>
+    <property name="num" value="23"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object x="399.777" y="565.81">
+   <properties>
+    <property name="num" value="22"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object x="311.697" y="597.695">
+   <properties>
+    <property name="num" value="21"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object x="208.903" y="591.064">
+   <properties>
+    <property name="num" value="20"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object x="52.2258" y="592.722">
+   <properties>
+    <property name="num" value="19"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object x="208.967" y="156.218">
+   <properties>
+    <property name="num" value="50"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object x="1102.66" y="116.657">
+   <properties>
+    <property name="num" value="61"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object x="207.953" y="432.136">
+   <properties>
+    <property name="num" value="35"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object x="255.832" y="401.704">
+   <properties>
+    <property name="num" value="36"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object x="321.566" y="397.647">
+   <properties>
+    <property name="num" value="37"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object x="355.171" y="305.336">
+   <properties>
+    <property name="num" value="38"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object x="159.199" y="336.033">
+   <properties>
+    <property name="num" value="34"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object x="60.3136" y="336.033">
+   <properties>
+    <property name="num" value="33"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object x="97.181" y="149.922">
+   <properties>
+    <property name="num" value="49"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object x="271.103" y="160.092">
+   <properties>
+    <property name="num" value="51"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object x="365.328" y="110.288">
+   <properties>
+    <property name="num" value="52"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object x="442.258" y="110.288">
+   <properties>
+    <property name="num" value="53"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object x="641.048" y="368.775">
+   <properties>
+    <property name="num" value="41"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object x="534.206" y="370.498">
+   <properties>
+    <property name="num" value="40"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object x="754.782" y="375.668">
+   <properties>
+    <property name="num" value="42"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object x="839.221" y="306.738">
+   <properties>
+    <property name="num" value="43"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object x="923.874" y="305.015">
+   <properties>
+    <property name="num" value="44"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object x="1006.38" y="372.221">
+   <properties>
+    <property name="num" value="45"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object x="1154.08" y="430.812">
+   <properties>
+    <property name="num" value="47"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object x="1261.42" y="430.812">
+   <properties>
+    <property name="num" value="48"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object x="1106.32" y="463.553">
+   <properties>
+    <property name="num" value="46"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object x="816.819" y="153.369">
+   <properties>
+    <property name="num" value="58"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object x="887.472" y="153.369">
+   <properties>
+    <property name="num" value="59"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object x="728.933" y="80.9926">
+   <properties>
+    <property name="num" value="57"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object x="680.682" y="79.2693">
+   <properties>
+    <property name="num" value="56"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object x="603.136" y="80.9926">
+   <properties>
+    <property name="num" value="55"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object x="547.992" y="80.9926">
+   <properties>
+    <property name="num" value="54"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object x="1263.14" y="115.458">
+   <properties>
+    <property name="num" value="62"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object x="1006.38" y="115.458">
+   <properties>
+    <property name="num" value="60"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object x="444.598" y="306.738">
+   <properties>
+    <property name="num" value="39"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object x="49.9742" y="761.675">
+   <polyline points="0,0 93.0553,-3.44649 186.111,-1.72325 270.55,-6.89299 360.159,-1.72325 454.937,-3.44649 541.099,-3.44649 620.369,-3.44649 684.129,-3.44649 742.719,-1.72325 796.14,-36.1882 878.856,-34.4649 911.597,0 956.402,-1.72325 1004.65,-3.44649 1071.86,-3.44649 1132.17,-1.72325 1183.87,-1.72325"/>
+  </object>
+  <object x="410.133" y="759.952">
+   <polyline points="0,0 -93.0553,-163.708"/>
+  </object>
+  <object x="963.295" y="756.505">
+   <polyline points="0,0 39.6347,-163.708"/>
+  </object>
+  <object x="927.107" y="730.657">
+   <polyline points="0,0 72.3764,-139.583"/>
+  </object>
+  <object x="56.8671" y="591.074">
+   <polyline points="0,0 156.815,1.72325 251.594,3.44649"/>
+  </object>
+  <object x="317.077" y="601.413">
+   <polyline points="0,0 84.4391,-37.9114 167.155,-34.4649"/>
+  </object>
+  <object x="473.893" y="572.118">
+   <polyline points="0,0 77.5461,-75.8229 130.967,-79.2693 206.79,-75.8229 255.04,-77.5461"/>
+  </object>
+  <object x="1242.46" y="758.229">
+   <polyline points="0,0 -77.5461,-160.262 -137.86,-163.708 -237.808,-167.155"/>
+  </object>
+  <object x="1002.93" y="596.243">
+   <polyline points="0,0 -82.7158,-65.4834 -163.708,-60.3136 -277.443,-99.9483"/>
+  </object>
+  <object x="725.487" y="498.018">
+   <polyline points="0,0 27.5719,-120.627"/>
+  </object>
+  <object x="684.129" y="498.018">
+   <polyline points="0,0 -43.0812,-129.243"/>
+  </object>
+  <object x="604.86" y="491.125">
+   <polyline points="0,0 34.4649,-122.351"/>
+  </object>
+  <object x="556.609" y="492.849">
+   <polyline points="0,0 -20.679,-125.797"/>
+  </object>
+  <object x="539.376" y="372.221">
+   <polyline points="0,0 106.841,-1.72325 217.129,1.72325"/>
+  </object>
+  <object x="754.782" y="379.114">
+   <polyline points="0,0 84.4391,-70.6531 156.815,-72.3764"/>
+  </object>
+  <object x="542.823" y="372.221">
+   <polyline points="0,0 -101.672,-62.0369 -182.664,-70.6531 -220.576,27.5719 -273.996,27.5719"/>
+  </object>
+  <object x="913.321" y="308.461">
+   <polyline points="0,0 91.3321,58.5904"/>
+  </object>
+  <object x="110.288" y="149.922">
+   <polyline points="-14.1509,1.57233 101.672,5.16974 156.815,5.16974"/>
+  </object>
+  <object x="1006.38" y="113.734">
+   <polyline points="0,0 101.672,3.44649 253.317,5.16974"/>
+  </object>
+  <object x="112.011" y="155.092">
+   <polyline points="-14.1509,-6.28931 -55.1439,180.941"/>
+  </object>
+  <object x="1011.55" y="113.734">
+   <polyline points="0,0 -129.243,37.9114"/>
+  </object>
+  <object x="889.195" y="155.092">
+   <polyline points="0,0 -68.9299,-3.44649 -158.539,-75.8229 -211.959,-79.2693 -282.612,-74.0996 -337.756,-79.2693 -454.937,-44.8044 -525.59,-44.8044 -627.262,1.72325"/>
+  </object>
+  <object x="909.874" y="306.738">
+   <polyline points="15.7233,0 -25.8487,-156.815"/>
+  </object>
+  <object x="840.944" y="306.738">
+   <polyline points="0,0 -27.5719,-153.369"/>
+  </object>
+  <object x="410.133" y="761.675">
+   <polyline points="0,0 -8.61623,-194.727"/>
+  </object>
+  <object x="499.742" y="761.675">
+   <polyline points="0,0 -24.1255,-193.004"/>
+  </object>
+  <object x="60.0759" y="340.43">
+   <polyline points="0,0 87.4789,-4.21585 206.577,57.968"/>
+  </object>
+  <object x="1008.64" y="374.157">
+   <polyline points="0,0 162.31,56.914"/>
+  </object>
+  <object x="1169.9" y="432.125">
+   <polyline points="0,0 92.7487,0"/>
+  </object>
+  <object x="911.765" y="308.824">
+   <polyline points="17.2956,0 95.5882,-197.059"/>
+  </object>
+  <object x="270.588" y="404.412">
+   <polyline points="-14.1509,0 -61.7647,185.294"/>
+  </object>
+  <object x="1169.12" y="432.353">
+   <polyline points="-18.8679,0 -61.7647,155.882"/>
+  </object>
+ </objectgroup>
+</map>
