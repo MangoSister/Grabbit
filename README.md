@@ -2,6 +2,7 @@ gRabbit
 =======
 
 A 2v2 competitive (vintage?) platformer in lua/LÖVE
+
 Executable inside build/ folder (LÖVE required)
 
 Use 4 Xbox 360 controllers
